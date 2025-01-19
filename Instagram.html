@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Giriş - Sahte Sayfa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            text-align: center;
+            padding: 50px;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #3897f0;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #3897f0;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #2a74c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Instagram Giriş Yap</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Kullanıcı Adı" required><br>
+            <input type="password" id="password" placeholder="Şifre" required><br>
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </div>
+
+    <script>
+        // Bu bölüm eğitim amaçlıdır. Kullanıcı bilgilerini toplama amacıyla kullanılmamalıdır.
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Kullanıcı bilgileri burada gösterilmektedir. Gerçek kimlik avı amacıyla kullanılmamalıdır.
+            console.log("Kullanıcı Adı: " + username);
+            console.log("Şifre: " + password);
+            
+            // Eğitim açıklaması
+            alert("Bilgileriniz kaydedildi. Gerçek Instagram sayfasına gitmek için her zaman doğru URL'yi kontrol edin.");
+        });
+    </script>
+</body>
+</html>
